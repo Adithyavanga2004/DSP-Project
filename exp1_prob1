@@ -1,0 +1,28 @@
+x = 306;
+a = 1+mod(x,3);
+t = -1:0.00001:1;
+y1 = sin(20*pi*a*t);
+y2 = cos((5*pi*a*t)+(pi/4));
+y3 = exp(-2*a*t);
+y4 = exp(-0.25*a*t).*sin(20*pi*t);
+subplot(4,1,1)
+xlabel(t)
+ylabel(y1)
+plot(t,y1)
+subplot(4,1,2)
+xlabel(t)
+ylabel(y2)
+plot(t,y2)
+subplot(4,1,3)
+xlabel(t)
+ylabel(y3)
+plot(t,y3)
+subplot(4,1,4)
+xlabel(t)
+ylabel(y4)
+plot(t,y4)
+
+
+
+
+
