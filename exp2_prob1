@@ -1,0 +1,51 @@
+x = 159;
+a = 1 + mod(x,3)
+t = 0:0.001:1;
+nt1 = 0:(1/14):1;
+nt2 = 0:(1/10):1;
+nt3 = 0:(1/9):1;
+y1 = cos(2*pi*5*t);
+y2 = (1/2)*cos(2*pi*6*t);
+y3 = (1/4)*cos(2*pi*10*t);
+yt = y1 +y2 +y3;
+plot(t,y1);
+title('figure 1')
+hold on
+plot(t,y2)
+plot(t,y3)
+hold off
+plot(t,yt)
+title('figure 2')
+y1d1 = cos(2*pi*5*nt1);
+y2d1 = (1/2)*cos(2*pi*6*nt1);
+y3d1 = (1/4)*cos(2*pi*10*nt1);
+ytd1 = y1d1 +y2d1 +y3d1;
+stem(nt1,ytd1)
+title('figure 3')
+plot(nt1,ytd1)
+title('figure 4')
+
+y1d2 = cos(2*pi*5*nt2);
+y2d2 = (1/2)*cos(2*pi*6*nt2);
+y3d2 = (1/4)*cos(2*pi*10*nt2);
+ytd2 = y1d2 +y2d2 +y3d2;
+stem(nt2,ytd2)
+title('figure 5')
+plot(nt2,ytd2)
+title('figure 6')
+
+y1d3 = cos(2*pi*5*nt3);
+y2d3 = (1/2)*cos(2*pi*6*nt3);
+y3d3 = (1/4)*cos(2*pi*10*nt3);
+ytd3 = y1d3 +y2d3 +y3d3;
+stem(nt3,ytd3)
+title('figure 7')
+plot(nt3,ytd3)
+title('figure 8')
+
+
+
+
+
+
+
