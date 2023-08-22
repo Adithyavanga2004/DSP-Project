@@ -1,0 +1,12 @@
+[z1,Fs1] = audioread('track001.wav');
+load handel.mat
+filename = 'sound1.wav'
+audiowrite("sound1.wav",z1,Fs1)
+z1u = upsample(z1,5);  
+sound(z1u,Fs1*5);
+filename = "sound3.wav"
+audiowrite('sound3.wav',z1u,Fs1*5)
+z1d = downsample(z1,10)
+sound(z1d,Fs1/10);
+filename = "sound2.wav"
+audiowrite("sound2.wav",z1d,Fs1/10)
